@@ -20,19 +20,15 @@ This repo simulates a single-corridor automated airport transit system and compa
 
 At time step \(\Delta t\):
 
-\[
-x \leftarrow x + v\Delta t + 0.5a\Delta t^2,\quad
-v \leftarrow \max(0, \min(v + a\Delta t, v_{\max}))
-\]
+x←x+vΔt+0.5aΔt^2
 
 ### Safety headway
 
 The dispatch and following constraint uses:
-
-\[
-d_{safe}(v) = \frac{v^2}{2|a_{brake}|} + buffer
-\]
-
+d_safe(v)= v^2/(2∣a_brake∣) + buffer
+ 
+​
+ +buffer
 ### Passenger demand and waiting time
 
 Passengers arrive with exponential inter-arrival times. Waiting time is computed exactly by tracking arrival timestamps and summing \(t_{board} - t_{arrive}\) for each boarded passenger.
@@ -44,8 +40,4 @@ Passengers arrive with exponential inter-arrival times. Waiting time is computed
 - Maximum queue length
 - Vehicle throughput (vehicles/hour)
 - Corridor utilization (fraction of time with \(\ge 1\) vehicle in corridor)
-
-## Configuration
-
-Edit parameters in `airport_transit_sim/config.py`, then re-run `python main.py`.
 
