@@ -26,9 +26,7 @@ x←x+vΔt+0.5aΔt^2
 
 The dispatch and following constraint uses:
 d_safe(v)= v^2/(2∣a_brake∣) + buffer
- 
-​
- +buffer
+
 ### Passenger demand and waiting time
 
 Passengers arrive with exponential inter-arrival times. Waiting time is computed exactly by tracking arrival timestamps and summing \(t_{board} - t_{arrive}\) for each boarded passenger.
