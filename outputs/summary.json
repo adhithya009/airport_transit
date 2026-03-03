@@ -1,0 +1,64 @@
+{
+  "config": {
+    "CORRIDOR_LENGTH_M": 5000.0,
+    "MAX_SPEED_MPS": 15.0,
+    "MAX_ACCEL_MPS2": 1.0,
+    "MAX_BRAKE_MPS2": 2.0,
+    "SAFETY_BUFFER_M": 10.0,
+    "TIME_STEP_S": 0.5,
+    "VEHICLE_CAPACITY": 40,
+    "ARRIVAL_RATE_PAX_PER_S": 0.6,
+    "FIXED_INTERVAL_S": 60.0,
+    "HORIZON_S": 3600.0,
+    "N_RUNS": 30,
+    "BASE_SEED": 12345
+  },
+  "strategies": {
+    "fixed_interval": {
+      "n_runs": 30,
+      "passengers_transported": {
+        "mean": 1949.9666666666667,
+        "std": 44.93864271643506
+      },
+      "avg_wait_time_s": {
+        "mean": 33.759122703029284,
+        "std": 2.286756334006652
+      },
+      "max_queue_len": {
+        "mean": 56.43333333333333,
+        "std": 6.861603981242454
+      },
+      "vehicle_throughput_per_hr": {
+        "mean": 55.0,
+        "std": 0.0
+      },
+      "corridor_occupied_fraction": {
+        "mean": 0.9998611303985557,
+        "std": 0.0
+      }
+    },
+    "dynamic_headway": {
+      "n_runs": 30,
+      "passengers_transported": {
+        "mean": 1959.0666666666666,
+        "std": 46.10627403886728
+      },
+      "avg_wait_time_s": {
+        "mean": 5.999936968947282,
+        "std": 0.07388592240235003
+      },
+      "max_queue_len": {
+        "mean": 16.266666666666666,
+        "std": 1.4605934866804429
+      },
+      "vehicle_throughput_per_hr": {
+        "mean": 272.0,
+        "std": 0.0
+      },
+      "corridor_occupied_fraction": {
+        "mean": 0.9998611303985557,
+        "std": 0.0
+      }
+    }
+  }
+}
