@@ -5,16 +5,7 @@ This repo simulates a single-corridor automated airport transit system and compa
 - **Fixed interval dispatch**: launch every \(X\) seconds
 - **Dynamic safety headway dispatch**: launch only when the lead vehicle is beyond a safety distance
 
-## Quick start
 
-```bash
-python -m venv .venv
-.\.venv\Scripts\activate
-pip install -r requirements.txt
-python main.py
-```
-
-Outputs (plots + summary JSON) are written to `outputs/`.
 
 ## Model (short report-style)
 
